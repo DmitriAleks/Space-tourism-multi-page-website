@@ -14,10 +14,17 @@
       display: flex;
       justify-content: space-around;
       height: 40%;
+      background-color: rgba(101 100 108 / 50%);
 
       button {
+        color: #fff;
+        font-size: 14px;
         border: 0;
+        background: none;
 
+        .active {
+          border-bottom: white 2px solid;
+        }
       }
 
     }
@@ -25,6 +32,12 @@
 
   .content {
     height: 75%;
+    display: flex;
+    justify-content: center;
+    .infoContent {
+      height: 90%;
+      width: 80%;
+    }
   }
 }
 
