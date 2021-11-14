@@ -2,6 +2,7 @@ import React from 'react'
 import style from './home.module.scss'
 
 const Home = () => {
+    //test
     return (
         <div className={style.container}>
             <div className={style.mainContent}>
