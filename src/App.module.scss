@@ -1,0 +1,30 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+
+  .header {
+    height: 25%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .btn {
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      height: 40%;
+
+      button {
+        border: 0;
+
+      }
+
+    }
+  }
+
+  .content {
+    height: 75%;
+  }
+}
+

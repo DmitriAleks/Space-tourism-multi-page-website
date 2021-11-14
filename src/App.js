@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.scss'
+import {useEffect, useState} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [theme,setTheme] = useState('destination')
+    useEffect(() => {
+        document.body.setAttribute('data-theme', theme)
+    }, [theme]);
+    const changeTheme = (e) => {
+        setTheme(e.target.value)
+    }
+
+
+    return (
+        <div className={style.app}>
+            <div className={style.header}>
+                <div className={style.btn}>
+                    <button value={'home'} onClick={changeTheme}>00 home</button>
+                    <button value={'destination'} onClick={changeTheme}>01 destination</button>
+                    <button value={'crew'} onClick={changeTheme}>02 crew</button>
+                    <button value={'technology'} onClick={changeTheme}>03 technology</button>
+                </div>
+
+            </div>
+            <div className={style.content}>
+
+
+            </div>
+        </div>
+    );
 }
 
 export default App;
