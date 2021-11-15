@@ -1,0 +1,15 @@
+.container {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+img{
+  height: 440px;
+  width: 440px;
+  z-index: 2;
+}
+  }
+
+  .secondaryContent {
+
+  }
+}

@@ -1,14 +1,17 @@
 import style from './App.module.scss'
 import {useEffect, useState} from "react";
 import Home from "./page/home/home";
+import Destination from "./page/destination/Destination";
 
 function App() {
     const [theme, setTheme] = useState('destination')
+    const [content, setContent] = useState('home')
     useEffect(() => {
         document.body.setAttribute('data-theme', theme)
     }, [theme]);
     const changeTheme = (e) => {
         setTheme(e.target.value)
+        setContent(e.target.value)
     }
 
     return (
@@ -23,7 +26,8 @@ function App() {
             </div>
             <div className={style.content}>
                 <div className={style.infoContent}>
-                    <Home/>
+                    {content === 'home' && <Home/>}
+                    {content === 'destination' && <Destination/>}
                 </div>
             </div>
         </div>
