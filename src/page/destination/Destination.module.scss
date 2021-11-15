@@ -1,15 +1,69 @@
 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
   .mainContent {
+    height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-img{
-  height: 440px;
-  width: 440px;
-  z-index: 2;
-}
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Lustria', serif;
+    font-weight: bold;
+
+    span {
+      margin-left: 5%;
+
+      :first-child {
+        color: rgba(101 100 108 / 50%);
+      }
+    }
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
   }
 
   .secondaryContent {
+    height: 100%;
+    width: 50%;
 
+    .btnContainer {
+
+      button {
+        color: #fff;
+        font-size: 14px;
+        border: 0;
+        background: none;
+        margin: 2px;
+      }
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+
+      :nth-child(1) {
+        font-size: 80px;
+      }
+
+      :nth-child(2) {
+
+      }
+    }
+
+    .distanceInfo {
+      display: flex;
+      flex-direction: row;
+      .info{
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }
