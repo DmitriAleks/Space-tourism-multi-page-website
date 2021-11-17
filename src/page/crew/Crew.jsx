@@ -1,21 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './Crew.module.scss'
-
+import {crewData} from '../../data/data';
  const Crew = () => {
+     const [t, setT] = useState('Specialist')
+     const data = crewData[t]
+     const changePeople = (e) => {
+         setT(e.target.value)
+     }
+
     return(
         <div className={style.container}>
             <div className={style.mainContent}>
-                <div>
+                <div className={style.title}>
                     <span> <span>02</span> PICK YOUR DESTINATION</span>
                 </div>
-                <div>
-                    <span>ds</span>
-                    <span>Title</span>
-                    <span>ds</span>
+                <div className={style.description}>
+                    <span>{data.job}</span>
+                    <span>{data.name}</span>
+                    <span>{data.description}</span>
                 </div>
-                <div>
-                    <button>123</button>
-
+                <div className={style.btnContainer}>
+                    <button value={'Specialist'} onClick={changePeople}></button>
+                    <button value={'Pilot'} onClick={changePeople}></button>
+                    <button value={'Commander'} onClick={changePeople}></button>
+                    <button value={'Engineer'} onClick={changePeople}></button>
                 </div>
             </div>
             <div className={style.secondaryContent}>

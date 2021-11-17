@@ -3,12 +3,50 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 100%;
   .mainContent {
-    background-color: red;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-size: 20px;
+      font-family: 'Lustria', serif;
+      font-weight: bold;
+    span{
+      :first-child {
+        color: rgba(101 100 108 / 50%);
+      }
+    }
+    }
+    .description{
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      :nth-child(1){
+        margin-bottom: 5%;
+      }
+      :nth-child(2){
+        margin-bottom: 5%;
+        font-size: 50px;
+      }
+
+    }
+    .btnContainer{
+      button{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-right: 2%;
+        border: 0;
+      }
+    }
   }
 
   .secondaryContent {
-    background-color: aqua;
+    width: 50%;
     img{
       height: 200px;
       width: 200px;

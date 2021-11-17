@@ -13,7 +13,7 @@ const destinationData = {
     Mars: {
         img: 'https://www.freepnglogos.com/uploads/mars-png/mars-transparent-png-stickpng-0.png',
         name: 'MARS',
-        description:`  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+        description: `  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
           the tallest planetary mountain in our solar system. It’s two and a half times 
           the size of Everest!`,
         distance: {
@@ -45,4 +45,39 @@ const destinationData = {
         }
     },
 }
+
+
+export const crewData = {
+    Specialist: {
+        name: 'Mark Shuttleworth',
+        job: 'Mission Specialist',
+        description: 'Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind\n' +
+            'the Linux-based Ubuntu operating system. Shuttleworth became the first South\n' +
+            'African to travel to space as a space tourist.',
+    },
+    Pilot: {
+        name: 'Victor Glover',
+        job: 'Pilot',
+        description: `Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+            and former NASA astronaut. He launched into space for the third time as
+            commander of Crew Dragon Demo-2.`,
+    },
+    Commander: {
+        name: 'Douglas Hurley',
+        job: 'Commander',
+        description: `Pilot on the first operational flight of the SpaceX Crew Dragon to the
+            International Space Station. Glover is a commander in the U.S. Navy where
+          he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+           station systems flight engineer.`,
+    },
+    Engineer: {
+        name: 'Anousheh Ansari',
+        job: 'Flight Engineer',
+        description: `Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+         Ansari was the fourth self-funded space tourist, the first self-funded woman to
+         fly to the ISS, and the first Iranian in space.`,
+    },
+}
+
+
 export default destinationData
