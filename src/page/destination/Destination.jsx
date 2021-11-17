@@ -4,7 +4,7 @@ import destinationData from '../../data/data';
 
 
 const Destination = () => {
-    const [t, setT] = useState('Mars')
+    const [t, setT] = useState('Moon')
     const data = destinationData[t]
     const changePlanet = (e) => {
         setT(e.target.value)

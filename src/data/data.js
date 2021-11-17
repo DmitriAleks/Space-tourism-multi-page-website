@@ -22,7 +22,7 @@ const destinationData = {
         }
     },
     Europa: {
-        img: 'https://img2.freepng.ru/20180306/oqq/kisspng-ganymede-moons-of-jupiter-natural-satellite-galile-leave-the-moon-on-the-moon-5a9ecb4d2c91d3.4248855815203561731826.jpg',
+        img: 'https://files.fm/thumb_show.php?i=57dg8nmuy',
         name: 'EUROPA',
         description: ` The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
               winter lover’s dream. With an icy surface, it’s perfect for a bit of 
@@ -34,7 +34,7 @@ const destinationData = {
         }
     },
     Titan: {
-        img: 'https://img2.freepng.ru/20180331/xjw/kisspng-planet-natural-satellite-titan-ganymede-jupiter-solar-system-5ac03fa1770522.7940785015225486414875.jpg',
+        img: '../../assets/destination/Titan_in_true_color-removebg-preview.png',
         name: 'TITAN',
         description: `The only moon known to have a dense atmosphere other than Earth, Titan  
         is a home away from home (just a few hundred degrees colder!). As a  bonus, you get striking 

@@ -2,6 +2,8 @@ import style from './App.module.scss'
 import {useEffect, useState} from "react";
 import Home from "./page/home/home";
 import Destination from "./page/destination/Destination";
+import Crew from "./page/crew/Crew";
+import Technology from "./page/technology/Technology";
 
 function App() {
     const [theme, setTheme] = useState('destination')
@@ -28,6 +30,8 @@ function App() {
                 <div className={style.infoContent}>
                     {content === 'home' && <Home/>}
                     {content === 'destination' && <Destination/>}
+                    {content === 'crew' && <Crew/>}
+                    {content === 'technology' && <Technology/>}
                 </div>
             </div>
         </div>
