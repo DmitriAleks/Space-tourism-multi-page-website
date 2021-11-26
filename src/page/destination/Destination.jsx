@@ -18,10 +18,7 @@ const Destination = () => {
             </div>
             <div className={style.secondaryContent}>
                 <div className={style.btnContainer}>
-                    <button value={'Moon'} onClick={changePlanet}>MOON</button>
-                    <button value={'Mars'} onClick={changePlanet}>MARS</button>
-                    <button value={'Europa'} onClick={changePlanet}>EUROPA</button>
-                    <button value={'Titan'} onClick={changePlanet}>TITAN</button>
+
                 </div>
                 <div className={style.description}>
                     <span>{data.name}</span>
