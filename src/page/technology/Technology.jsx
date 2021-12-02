@@ -5,10 +5,10 @@ const Technology = () => {
     return(
         <div className={style.container}>
             <div className={style.mainContent}>
-
+asda
             </div>
             <div className={style.secondaryContent}>
-
+asd
             </div>
 
 

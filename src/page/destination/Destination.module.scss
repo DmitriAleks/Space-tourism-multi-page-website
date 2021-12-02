@@ -1,15 +1,13 @@
+@import 'src/common/style/Mixins';
+
+
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  @include displayFlex(center, space-evenly, row);
 
   .mainContent {
     height: 100%;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include displayFlex(start, space-between, column);
     font-size: 20px;
     font-family: 'Lustria', serif;
     font-weight: bold;
@@ -61,14 +59,17 @@
       display: flex;
       flex-direction: row;
       margin: 20px;
-      .info{
+
+      .info {
         margin-right: 20%;
         display: flex;
         flex-direction: column;
-        :nth-child(1){
+
+        :nth-child(1) {
           font-size: 12px;
         }
-        :nth-child(2){
+
+        :nth-child(2) {
           font-size: 22px;
         }
       }
