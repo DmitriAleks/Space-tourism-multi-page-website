@@ -7,7 +7,7 @@
   .mainContent {
     height: 100%;
     width: 50%;
-    @include displayFlex(start, space-between, column);
+    @include displayFlex(initial, space-between, column);
     font-size: 20px;
     font-family: 'Lustria', serif;
     font-weight: bold;
