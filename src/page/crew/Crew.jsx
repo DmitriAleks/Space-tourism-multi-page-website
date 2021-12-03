@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import style from './Crew.module.scss'
 import {crewData} from '../../data/data';
+import image from './../../assets/no-image.jpg'
+import Title  from './../../common/components/title/Title'
+
  const Crew = () => {
      const [t, setT] = useState('Specialist')
      const data = crewData[t]
@@ -12,7 +15,8 @@ import {crewData} from '../../data/data';
         <div className={style.container}>
             <div className={style.mainContent}>
                 <div className={style.title}>
-                    <span> <span>02</span> PICK YOUR DESTINATION</span>
+                    <Title page={'02'} value={'PICK YOUR DESTINATION'}/>
+                    {/*<span> <span>02</span> PICK YOUR DESTINATION</span>*/}
                 </div>
                 <div className={style.description}>
                     <span>{data.job}</span>
@@ -27,8 +31,7 @@ import {crewData} from '../../data/data';
                 </div>
             </div>
             <div className={style.secondaryContent}>
-                12
-                <img src="./../../assets/crew/image-anousheh-ansari.png" alt=""/>
+                <img src={image} alt=""/>
             </div>
 
 

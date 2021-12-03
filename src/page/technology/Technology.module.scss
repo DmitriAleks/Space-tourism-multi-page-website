@@ -4,11 +4,10 @@
   height: 100%;
   @include displayFlex(center, center, row);
 
-
   .mainContent {
     width: 60%;
     height: 100%;
-    @include displayFlex(start, space-around, column);
+    @include displayFlex(start, right, column);
 
 
     .contentContainer {
@@ -47,5 +46,11 @@
   .secondaryContent {
     height: 100%;
     width: 40%;
+    @include displayFlex(start, center, column);
+    img{
+      margin-left: 20%;
+      height: 80%;
+      width: 80%;
+    }
   }
 }

@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import style from './Destination.module.scss';
 import destinationData from '../../data/data';
-
+import image from './../../assets/no-image.jpg'
+import Title  from './../../common/components/title/Title'
 
 const Destination = () => {
     const [t, setT] = useState('Moon')
@@ -13,8 +14,9 @@ const Destination = () => {
     return (
         <div className={style.container}>
             <div className={style.mainContent}>
-                <span> <span>01</span> PICK YOUR DESTINATION</span>
-                <img src={data.img}/>
+                {/*<span> <span>01</span> PICK YOUR DESTINATION</span>*/}
+                <Title page={'01'} value={'PICK YOUR DESTINATION'}/>
+                <img src={image}/>
             </div>
             <div className={style.secondaryContent}>
                 <div className={style.btnContainer}>

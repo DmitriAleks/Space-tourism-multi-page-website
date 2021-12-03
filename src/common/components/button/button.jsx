@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import style from "../../../page/technology/Technology.module.scss";
 
 

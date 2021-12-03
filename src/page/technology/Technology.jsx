@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import style from './Technology.module.scss';
 import {technologyData} from './../../data/data';
 import Button from "../../common/components/button/button";
+import image from './../../assets/no-image.jpg'
+import Title  from './../../common/components/title/Title'
 
 const Technology = () => {
     const [t, setT] = useState('Spaceport')
@@ -12,7 +14,8 @@ const Technology = () => {
     return (
         <div className={style.container}>
             <div className={style.mainContent}>
-                <span> <span>03</span> SPACE LAUNCH 101</span>
+                {/*<span> <span>03</span> SPACE LAUNCH 101</span>*/}
+                <Title page={'03'} value={' SPACE LAUNCH 101'} />
                 <div className={style.contentContainer}>
                     <div className={style.btnContainer}>
                         <button value={'Vehicle'} onClick={changeValue} className={t === 'Vehicle'? style.active: ''}>1</button>
@@ -30,10 +33,8 @@ const Technology = () => {
                 </div>
             </div>
             <div className={style.secondaryContent}>
-                <img src='' alt=""/>
+                <img src={image} alt=""/>
             </div>
-
-
         </div>
     )
 }
