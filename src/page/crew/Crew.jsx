@@ -20,10 +20,10 @@ import {crewData} from '../../data/data';
                     <span>{data.description}</span>
                 </div>
                 <div className={style.btnContainer}>
-                    <button value={'Specialist'} onClick={changePeople}></button>
-                    <button value={'Pilot'} onClick={changePeople}></button>
-                    <button value={'Commander'} onClick={changePeople}></button>
-                    <button value={'Engineer'} onClick={changePeople}></button>
+                    <button value={'Specialist'} onClick={changePeople} className={t === 'Specialist'? style.active: ''} ></button>
+                    <button value={'Pilot'} onClick={changePeople} className={t === 'Pilot'? style.active: ''}></button>
+                    <button value={'Commander'} onClick={changePeople} className={t === 'Commander'? style.active: ''}></button>
+                    <button value={'Engineer'} onClick={changePeople} className={t === 'Engineer'? style.active: ''}></button>
                 </div>
             </div>
             <div className={style.secondaryContent}>
