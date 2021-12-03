@@ -4,41 +4,48 @@
   height: 100%;
   @include displayFlex(center, center, row);
 
-  background-color: #999292;
 
   .mainContent {
-    width: 50%;
+    width: 60%;
     height: 100%;
-    background-color: red;
+    @include displayFlex(start, space-around, column);
+
 
     .contentContainer {
       @include displayFlex(center, center, row);
-      background-color: #6f2652;
+      height: 70%;
 
       .btnContainer {
-        @include displayFlex(center, center, column);
-        background-color: #3397b6;
+        @include displayFlex(start, center, column);
         width: 20%;
         height: 250px;
-        button{
+
+        button {
+          font-size: 20px;
+          color: white;
           margin-top: 5px;
           height: 60px;
           width: 60px;
           border-radius: 100%;
-          border: 0;
+          border: 0.5px white solid;
+          background: none;
+
+
+        }
+        .active{
+          background: white;
+          color: black;
         }
       }
 
       .content {
-        background-color: #c4a74b;
         width: 80%;
       }
     }
   }
 
   .secondaryContent {
-    background-color: #6aff00;
     height: 100%;
-    width: 50%;
+    width: 40%;
   }
 }
