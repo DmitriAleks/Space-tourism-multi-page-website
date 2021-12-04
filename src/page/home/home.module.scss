@@ -4,8 +4,9 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: end;
   .mainContent {
-    height: 100%;
+    height: 80%;
     width: 50%;
     @include displayFlex(start,space-around,column);
     :nth-child(1){

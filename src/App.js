@@ -6,7 +6,6 @@ import Crew from "./page/crew/Crew";
 import Technology from "./page/technology/Technology";
 
 function App() {
-    //const [theme, setTheme] = useState('home')
     const [content, setContent] = useState('home')
     useEffect(() => {
         document.body.setAttribute('data-theme', content)
@@ -18,6 +17,7 @@ function App() {
     return (
         <div className={style.app}>
             <div className={style.header}>
+                <div className={style.logo}>L</div>
                 <div className={style.btn}>
                     <button value={'home'} onClick={changeTheme} className={content === 'home' ? style.active: ''}>00 HOME</button>
                     <button value={'destination'} onClick={changeTheme} className={content === 'destination' ? style.active: ''}>01 DESTINATION</button>
