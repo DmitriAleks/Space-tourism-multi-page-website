@@ -43,7 +43,7 @@
       }
 
       button {
-        color: #fff;
+        color: #c7c9cd;
         letter-spacing: 1px;
         font-size: 14px;
         border: 0;
@@ -53,7 +53,11 @@
       }
 
       .active {
-        border-bottom: white 2px solid;
+        border-bottom: white 3px solid;
+      }
+      span{
+
+        color: #fff;
       }
 
     }
