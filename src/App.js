@@ -13,7 +13,7 @@ function App() {
         document.body.setAttribute('data-theme', content)
     }, [content]);
     const changeTheme = (e) => {
-        setContent(e.target.value)
+        setContent(e.currentTarget.value)
     }
 
     return (
